@@ -1,0 +1,9 @@
+a.link-icons-internal
+{   
+}
+
+a.link-icons-external
+{   
+	background: url(/wp-content/plugins/link-icons/images/external_link_new_window.gif) center right no-repeat;
+    padding-right: 17px;
+}
