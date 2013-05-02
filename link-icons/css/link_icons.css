@@ -1,0 +1,11 @@
+a.link-icons-image
+{   
+	background: url(/wp-content/plugins/link-icons/images/link-icon-image.png) center right no-repeat;
+    padding-right: 17px;
+}
+
+a.link-icons-external
+{   
+	background: url(/wp-content/plugins/link-icons/images/link-icon-external.png) center right no-repeat;
+    padding-right: 17px;
+}
