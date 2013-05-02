@@ -4,6 +4,12 @@ a.link-icons-image
     padding-right: 17px;
 }
 
+a.link-icons-video
+{   
+	background: url(/wp-content/plugins/link-icons/images/link-icon-video.png) center right no-repeat;
+    padding-right: 17px;
+}
+
 a.link-icons-external
 {   
 	background: url(/wp-content/plugins/link-icons/images/link-icon-external.png) center right no-repeat;
