@@ -26,7 +26,7 @@ Since Link Icons use Http Header a caching plugin for your wordpress site is rec
 
 = 0.2 =
 
-*	Ignores <a>-tags if it wraps an <img>.
+*	Ignores a-tags if it wraps an img.
 *	Sets icons to links to URLs that return Image content type
 
 = 0.1 =
