@@ -1,11 +1,15 @@
 <?php
 function link_icons($content)
 {
-	$D = new DOMDocument;
-	$content=mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8"); 
-	$D->loadHTML($content);
-	processElement($D);
-	return $D->saveHTML();
+	if(strlen($content)>1)
+	{
+		//error_log($content, 0);
+		$D = new DOMDocument;
+		$content=mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8"); 
+		$D->loadHTML($content);
+		processElement($D);
+		return $D->saveHTML();
+	}
 }	
 
 function processElement(DOMNode $element){
@@ -35,7 +39,10 @@ function linkType($url,$child){
 	
 	$linkURL = $url;
 	$header=get_headers($url,1);	
+	
 	$contentType=$header['Content-Type'];
+	
+	if(is_array($contentType)) $contentType = $contentType[0];
 	
 	// is the link a directlink to an image?
 	// I could here just check if the url ends in jpg/jpeg/gif/png, but what if it is link to a php file with imaagick? 
@@ -54,7 +61,7 @@ function linkType($url,$child){
 	}
 	
 	// checking if it is a internal or external link
-	elseif(substr($linkURL,0,7)=="http://")
+	elseif(substr($linkURL,0,7)=="http://" || substr($linkURL,0,8)=="https://")
 	{
 		$linkURL=substr($linkURL,7,strlen($linkURL)-7);	
 		

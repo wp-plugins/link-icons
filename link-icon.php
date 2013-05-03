@@ -4,7 +4,7 @@ Plugin Name: Link Icons
 Plugin URI: 
 Description: Link Icons adds icons to your links to indicate if it's to an external site, an image etc.
 Author: Erik Bergh
-Version: 0.3
+Version: 0.3.1
 Author URI: http://www.bergh.me
 */
 
