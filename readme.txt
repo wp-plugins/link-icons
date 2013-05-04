@@ -4,7 +4,7 @@ Donate link:
 Tags:  Link, Icons, External link, Image link, Video link
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 0.3.1
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,8 +16,11 @@ Link Icons adds a icon next you your different types of links in your posts an p
 
 Link Icons does not connect to any external sites.
 
-Since Link Icons uses Http Header to check content type, using a caching plugin for your wordpress site is recomended.
 
+= 0.4 =
+
+*	Admin interface with option to enable or disable HTTP Header Usage
+*	Added support for youtu.be short links.
 
 = 0.3.1 =
 
@@ -86,5 +89,5 @@ Not yet, but by the end of this week an admin interface will give you this oppor
 
 == Upgrade Notice ==
 
-*	Fix for this http://wordpress.org/support/topic/i-will-come-back-later
-*	Fix for https-links
+*	Admin interface with option to enable or disable HTTP Header Usage
+*	Added support for youtu.be short links.
